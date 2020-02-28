@@ -9,26 +9,25 @@
     "timestamps": true
   },
   "attributes": {
-    "title": {
+    "Title": {
       "type": "string",
-      "required": true
-    },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
       "required": true
     },
     "content": {
       "type": "richtext",
       "required": true
     },
-    "published": {
-      "type": "date",
-      "required": true
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "published_at": {
+      "type": "date"
     },
     "category": {
-      "model": "category",
+      "model": "categories",
       "via": "articles"
     }
   }

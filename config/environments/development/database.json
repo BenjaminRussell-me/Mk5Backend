@@ -4,12 +4,14 @@
     "default": {
       "connector": "bookshelf",
       "settings": {
-        "client": "sqlite",
-        "filename": ".tmp/data.db"
+        "client": "mysql",
+        "database": "backendData",
+        "host": "34.70.186.184",
+        "port": 3306,
+        "username": "barussell77",
+        "password": "Halo1257"
       },
-      "options": {
-        "useNullAsDefault": true
-      }
+      "options": {}
     }
   }
 }
